@@ -21,6 +21,8 @@
         "import"
     ],
     "rules": {
+        "semi": ["error", "always"],
+        "comma-dangle": ["error", "always-multiline"],
         "object-curly-spacing": ["error", "always"],
         "no-unused-vars": ["off"],
         "@typescript-eslint/no-unused-vars": ["warn"],
@@ -34,7 +36,11 @@
         "import/extensions": ["error", {
             "ts": "never",
             "tsx": "never",
-            "scss": "always"
+            "scss": "always",
+            "types": "always",
+            "helpers": "always",
+            "constants": "always",
+            "components": "always"
         }],
         "react/jsx-filename-extension": ["error", {
             "extensions": [".ts", ".tsx"]
